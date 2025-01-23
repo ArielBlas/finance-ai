@@ -3,7 +3,7 @@ import CreateAccountDrawer from "@/components/dashboard/CreateAccountDrawer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Plus } from "lucide-react";
 import React from "react";
-import AccountCard from "./AccountCard";
+import AccountCard from "./_components/AccountCard";
 
 const DashboardPage = async () => {
   const accounts = await getUserAccounts();
