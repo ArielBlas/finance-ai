@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { updateBudget } from "@/app/actions/budget";
 
-export function BudgetProgress({ initialBudget, currentExpenses }) {
+const BudgetProgress = ({ initialBudget, currentExpenses }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [newBudget, setNewBudget] = useState(
     initialBudget?.amount?.toString() || ""
@@ -143,4 +143,6 @@ export function BudgetProgress({ initialBudget, currentExpenses }) {
       </CardContent>
     </Card>
   );
-}
+};
+
+export default BudgetProgress;

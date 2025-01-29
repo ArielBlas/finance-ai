@@ -19,7 +19,7 @@ const DashboardPage = async () => {
   }
 
   return (
-    <div className="px-5">
+    <div className="space-y-8">
       {/* Budget Progress */}
       {defaultAccount && (
         <BudgetProgress
